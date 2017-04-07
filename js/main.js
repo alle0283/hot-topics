@@ -75,7 +75,7 @@ $(document).ready(function () {
         if (errors.length === 0) {
             $.ajax({
                 type: "post",
-                url: "../server-side-script/web-service.php",
+                url: "./server-side-script/web-service.php",
                 data: dt,
                 dataType: "text"
             }).done(handleResponse).fail(handleErrors);
